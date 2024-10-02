@@ -56,7 +56,7 @@ components:
                 - nickname
                 - avatar
               type: object
-            - type: 'null'
+            - type: null
       required:
         - id
         - epID
@@ -184,7 +184,7 @@ components:
                     - nickname
                     - avatar
                   type: object
-                - type: 'null'
+                - type: null
           required:
             - id
             - epID
@@ -735,7 +735,7 @@ components:
                       - nickname
                       - avatar
                     type: object
-                  - type: 'null'
+                  - type: null
             required:
               - user
               - rate
@@ -2127,7 +2127,7 @@ paths:
                                 - nickname
                                 - avatar
                               type: object
-                            - type: 'null'
+                            - type: null
                       required:
                         - id
                         - epID
@@ -2616,7 +2616,7 @@ paths:
           name: subjectID
           required: true
           schema:
-            exclusiveMinimum: 0
+            exclusiveMinimum: false
             type: integer
       responses:
         '200':
@@ -3662,13 +3662,13 @@ paths:
           name: subjectID
           required: true
           schema:
-            exclusiveMinimum: 0
+            exclusiveMinimum: false
             type: integer
         - in: path
           name: imageID
           required: true
           schema:
-            exclusiveMinimum: 0
+            exclusiveMinimum: false
             type: integer
       responses:
         '200':
@@ -3696,13 +3696,13 @@ paths:
           name: subjectID
           required: true
           schema:
-            exclusiveMinimum: 0
+            exclusiveMinimum: false
             type: integer
         - in: path
           name: imageID
           required: true
           schema:
-            exclusiveMinimum: 0
+            exclusiveMinimum: false
             type: integer
       responses:
         '200':
