@@ -7,3 +7,9 @@ curl -Lo Sources/BangumiPrivateSwiftClient/openapi.yaml https://next.bgm.tv/p1/o
 gsed -i "s_exclusiveMinimum: 0_exclusiveMinimum: false_g" Sources/BangumiPrivateSwiftClient/openapi.yaml
 gsed -i "s_- type: 'null'_- type: null_g" Sources/BangumiPrivateSwiftClient/openapi.yaml
 ```
+
+### generate client
+
+```shell
+swift package plugin generate-code-from-openapi
+```
