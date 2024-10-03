@@ -13,3 +13,9 @@ gsed -i "s_- type: 'null'_- type: null_g" Sources/BangumiPrivateSwiftClient/open
 ```shell
 swift package plugin generate-code-from-openapi
 ```
+
+### test
+
+```shell
+swift test
+```
